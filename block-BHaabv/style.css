@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: sans-serif;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// My reset
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+button,
+input:focus,
+button:focus,
+textarea:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+input::placeholder {
+    letter-spacing: 0.04em;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* Custom style  */
+
+body {
+    background-color: #1D2029;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 35px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header style  */
+
+.header {
+    background-color: #20222F;
+    padding: 95px 0px;
+}
+
+.heading {
+    color: #fff;
+    font-size: 44px;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.header h4 {
+    color: #8086AD;
+    font-size: 24px;
+}
+
+.button span {
+    color: #8086AD;
+}
+
+.btn {
+    width: 50px;
+    height: 20px;
+    background: linear-gradient(to right, #5ED192, #4A93C5);
+    border-radius: 20px;
+    padding: 2px;
+    margin-left: 10px
+}
+
+.circle {
+    background: #212943;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.main {
+    margin-top: -110px;
+}
+
+.section {
+    padding: 60px 0px;
+}
+
+.top {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 2px;
+    background: linear-gradient(#2A8EF5, #2A8EF5);
+}
+
+.three {
+    background: linear-gradient(to right, #F7B867, #E04794);
+}
+
+.four {
+    background: linear-gradient(#C32D33, #C32D33);
+}
+
+.card {
+    background-color: #252B43;
+    padding: 35px;
+    text-align: center;
+    width: 23%;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.facebook i {
+    color: #2C90F1;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.facebook a,
+.instagram a,
+.twitter a,
+.youtube a {
+    color: #8086AD;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.twitter i {
+    color: #2C90F1;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.instagram i {
+    font-size: 25px;
+    padding: 10px;
+    color: palevioletred
+}
+
+.youtube i {
+    font-size: 25px;
+    padding: 10px;
+    color: #C32D33;
+}
+
+.number {
+    margin-top: 40px;
+}
+
+.number h2 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.number h3 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.number p {
+    color: #8086AD;
+    text-transform: uppercase;
+    line-height: 1.7;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.arrow {
+    margin-top: 10px;
+}
+
+.arrow span,
+i {
+    color: #4DB194;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.percent {
+    font-size: 10px;
+}
+
+
+/* overview section  */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.view i {
+    padding: 0px;
+}
+
+.percent {
+    font-size: 10px;
+}
+
+.likes {
+    margin: 10px;
+}
+
+.overview .card {
+    padding: 25px;
+}
